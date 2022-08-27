@@ -3,7 +3,7 @@
 ## 1. 背景
 `IMBroker`是用于在飞书、企业微信、钉钉、微信及其他企业内部即时通讯工具之间的消息传递。它基于FaaS平台Knative实现，将消息的收和发设计为函数实现，使用FaaS的事件驱动机制进行解耦和通讯，实现对底层资源使用的最大弹性。当前代码仅为概念验证使用，无数据存储机制。
 ## 2. 技术架构
-![techarch4imbroker](https://github.com/taikeguluer/imbroker/raw/master/pic4readme/techarch4imbroker.png)
+![techarch4imbroker](https://raw.githubusercontent.com/taikeguluer/imbroker/master/pic4readme/techarch4imbroker.png)
 ## 3. 快速开始
 当前部署仅能用于实践FaaS事件驱动，并且只实现了将发到飞书群里的消息转发到企业微信群，至少需要完成文末第1条Issue方可生产使用。
 ### 3.1 准备工作
