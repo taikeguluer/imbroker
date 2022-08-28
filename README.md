@@ -47,7 +47,7 @@ docker exec -it your-container-id bash
 - 设置能下载Knative镜像的代理
 ```shell
 echo [Service] > http_proxy.conf.www
-echo Environment="HTTP_PROXY=http://192.168.8.26:8080" "HTTPS_PROXY=http://192.168.8.26:8080" "NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.0.0/16,.svc,172.17.0.0/16,172.18.0.0/16,10.0.0.0/8,171.18.0.0/16,172.28.176.0/20">>http_proxy.conf.www 
+echo Environment="HTTP_PROXY=http://###.###.#.##:####" "HTTPS_PROXY=http://###.###.#.##:####" "NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.0.0/16,.svc,172.17.0.0/16,172.18.0.0/16,10.0.0.0/8,171.18.0.0/16,172.28.176.0/20">>http_proxy.conf.www 
 mkdir /etc/systemd/system/containerd.service.d
 cp http_proxy.conf.www /etc/systemd/system/containerd.service.d/http_proxy.conf
 systemctl daemon-reload
