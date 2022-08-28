@@ -118,7 +118,7 @@ proxy_http_version 1.1;
 ### 3.1.4 编译打包
 #### 3.1.4.1 获取源代码
 ```commandline
-git clone git@gitlab.cicconline.com:songxiang/imbroker.git
+git clone git@github.com:songxiang/imbroker.git
 cd imbroker\feishu-receiver
 ```
 #### 3.1.4.2 编辑feishu-receiver路径下的.env
